@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		
+		<link rel="stylesheet" href="jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	
+	<body class="b-page">
+		
+		
+		<div class="b-main">
+			<div class="b-main__line">
+				<div class="b-main__b-currency">
+					
+					
+					<form class="b-form" id="form" onsubmit="return false;">
+						<div class="b-main__caption">
+							Выберите валюту
+						</div>
+						<div  id="radioDiv">
+							<input class='button' type='radio' name='currency' id='usd' value='null' onchange="validation(document.getElementById('text').value)"  checked /><label id='label_usd' for='usd'></label>
+							<input class='button' type='radio' name='currency' id='eur' value='null' onchange="validation(document.getElementById('text').value)" /><label id='label_eur' for='eur'> </label>
+						</div>
+						
+						<div class="b-main__caption">
+							Введите сумму
+						</div>
+						<div class="div-form">
+							<input id="text" class="form-text" type="text" min="100" max="11000" onchange="validation(this.value)"/>
+							<p class='error'></p>
+						</div>
+						
+					</form>
+				</div>
+				<div class="b-main__b-payment">
+					<div class="b-main__caption">
+						К оплате
+					</div>
+					<div class="b-payment-sum">
+						0 RUB	
+					</div>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</body>
+<script src="functions.js"></script>	
+</html>										
